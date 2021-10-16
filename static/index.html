@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     <!-- Required meta tags. -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <meta name="theme-color" content="#ffffff" />
+     <meta name="description" content="ltasks">
+     <title>lTasks</title>
+     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+     <link rel="stylesheet" href="./assets/css/fa.min.css">
+</head>
+
+<body>
+     <div class="container w-full mx-auto max-w-8/12 md:px-4 pb-8 mb-6" id="view_id"></div>
+     <!-- Footer. -->
+     <div class="mb-2 card text-center p-2 mx-auto max-w-xl">
+          <h4 class="text-subtitle"><a href="https://github.com/lovesaroha/ltasks" target="_blank">LoveSaroha/ltasks</a>
+          </h4>
+          <h3 class="text-subtitle font-bold mb-0 hover:underline cursor-pointer"
+               onclick="javascript: window.location = 'https://lovesaroha.com';">Love Saroha</h3>
+          <h4 class="text-gray">lovesaroha1994@gmail.com</h4>
+     </div>
+     <!-- Modal element. -->
+     <div class="fixed z-50 inset-0 overflow-y-auto" onclick="javascript: closeModalBackground(event);"
+          style="display: none;" id="modal_id" aria-labelledby="modal-title" role="dialog" aria-modal="true"></div>
+     <!-- Include script.js file -->
+     <script type="text/javascript" src="./assets/js/helper.js"></script>
+     <script type="text/javascript" src="./assets/js/router.js"></script>
+     <script type="text/javascript" src="./assets/js/project.js"></script>
+</body>
+
+<!-- Project page template. -->
+<template id="projectPageTemplate_id">
+     <div class="grid md:grid-cols-4 grid-cols-1 gap-4">
+          <div class="md:col-span-1" id="sidebar_id">
+          </div>
+          <div class="md:col-span-3" id="overview_id">
+          </div>
+     </div>
+</template>
+
+<!-- Project board page template. -->
+<template id="projectBoardPageTemplate_id">
+     <div class="container w-full mx-auto md:max-w-11/12 mt-5 px-4 mb-6" id="overview_id">
+     </div>
+</template>
+
+</html>
