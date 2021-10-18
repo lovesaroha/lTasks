@@ -515,7 +515,7 @@ function showLogsView() {
      for (let i = 0; i < projectList.length; i++) {
           // Prepare log data based on dates.
           if (!projectList[i].isDefault) {
-               let createdAt = new Date(`${projectList[i].createdAt.getMonth() + 1} ${projectList[i].createdAt.getDay()} ${projectList[i].createdAt.getFullYear()}`);
+               let createdAt = new Date(`${projectList[i].createdAt.getMonth() + 1} ${projectList[i].createdAt.getDate()} ${projectList[i].createdAt.getFullYear()}`);
                let timeStamp = createdAt.getTime();
                if (logDatesData[timeStamp]) {
                     // Add log activity.
@@ -528,7 +528,7 @@ function showLogsView() {
                }
           }
           for (let j = 0; j < projectList[i].data.length; j++) {
-               let createdAt = new Date(`${projectList[i].data[j].createdAt.getMonth() + 1} ${projectList[i].data[j].createdAt.getDay()} ${projectList[i].data[j].createdAt.getFullYear()}`);
+               let createdAt = new Date(`${projectList[i].data[j].createdAt.getMonth() + 1} ${projectList[i].data[j].createdAt.getDate()} ${projectList[i].data[j].createdAt.getFullYear()}`);
                let timeStamp = createdAt.getTime();
                if (logDatesData[timeStamp]) {
                     // Add log activity.
